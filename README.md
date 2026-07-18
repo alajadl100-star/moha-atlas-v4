@@ -1,2 +1,2 @@
-# moha-atlas-v4
+# MOHA-ATLAS
 Moha Atlas V4 Green Identity
