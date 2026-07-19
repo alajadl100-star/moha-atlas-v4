@@ -26,6 +26,7 @@ app.use(limiter);
 // Routes
 app.use('/api/perfumes', require('./routes/perfumes'));
 app.use('/api/admin', require('./routes/admin'));
+app.use('/api/search', require('../src/routes/searchRoutes'));
 
 // Health check
 app.get('/health', (req, res) => {
@@ -54,4 +55,5 @@ connectDB();
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📍 API available at http://localhost:${PORT}/api`);
+  console.log(`🔍 Search API available at http://localhost:${PORT}/api/search`);
 });
