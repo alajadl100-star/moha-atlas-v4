@@ -1,0 +1,34 @@
+{
+  "name": "moha-atlas",
+  "version": "1.0.0",
+  "description": "أرخص عطر - موقع مقارنة أسعار العطور في قطر",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "scrape": "node server/scrapers/scraper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "perfume",
+    "qatar",
+    "price-comparison",
+    "scraper"
+  ],
+  "author": "MOHA-ATLAS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "mongoose": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.7.0",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
